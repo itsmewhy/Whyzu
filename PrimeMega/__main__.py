@@ -86,26 +86,26 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 *Hello {} !*
 ────────────────────────
-I'm a powerful group management bot built to help you manage your group!
+[✨] ɪ'ᴍ ᴡʜʏᴢᴜ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ [✨]{https://telegr.ph/file/9434958755f0fd73c2b8d.jpg}
 ────────────────────
-Hit the /help or tap on button to se available command on me.
+ʜɪᴛ ᴛʜᴇ /help ᴏʀ ᴛᴀᴘ ᴏɴ ʙᴜᴛᴛᴏɴ ᴛᴏ ꜱᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅ ᴏɴ ᴍᴇ.
 """
 
 buttons = [
         [
         InlineKeyboardButton(
-            text=f"➕️ Add {BOT_NAME} to your group ➕️", url=f"t.me/{BOT_USERNAME}?startgroup=true"
+            text=f" ᴛᴀᴍʙᴀʜᴋᴀɴ ꜱᴀʏᴀ ", url=f"t.me/{BOT_USERNAME}?startgroup=true"
         ),
     ],
     [
-        InlineKeyboardButton(text="Support", url=f"https://t.me/{SUPPORT_CHAT}"
+        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/WhyzuNotSupport"
         ),
         InlineKeyboardButton(
             text="TryInline", switch_inline_query_current_chat=""
         ),
     ],
     [
-        InlineKeyboardButton(text="Help & Commands❔", callback_data="help_back"
+        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅ", callback_data="help_back"
         ),
     ],
 ]
@@ -114,12 +114,10 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-PRIME_IMG = "https://telegra.ph/file/b9fa4e1360d0a872a3cd5.jpg"
+PRIME_IMG = "https://telegr.ph/file/9434958755f0fd73c2b8d.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @Bukan_guudlooking \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+DONATE_STRING = """ʜᴇʏᴀ, ꜱᴇɴᴀɴɢ ᴍᴇɴᴅᴇɴɢᴀʀ ᴀɴᴅᴀ ɪɴɢɪɴ ᴍᴇɴʏᴜᴍʙᴀɴɢ!
+ ᴀɴᴅᴀ ᴅᴀᴘᴀᴛ ᴍᴇɴᴅᴜᴋᴜɴɢ ᴘʀᴏʏᴇᴋ ᴅᴇɴɢᴀɴ ᴍᴇɴɢʜᴜʙᴜɴɢɪ @WhyyTod."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -374,7 +372,7 @@ def prime_about_callback(update, context):
     query = update.callback_query
     if query.data == "prime_":
         query.message.edit_text(
-            text=f"๏ I'm *{BOT_NAME}*, a powerful group management bot built to help you manage your group easily."
+            text=f"๏ ɪ'ᴍ ᴡʜʏᴢᴜ, ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -388,15 +386,15 @@ def prime_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="prime_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="prime_notes"),
+                    InlineKeyboardButton(text="ᴀᴅᴍɪɴ", callback_data="prime_admin"),
+                    InlineKeyboardButton(text="ɴᴏᴛᴇꜱ", callback_data="prime_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", callback_data="prime_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="prime_credit"),
+                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="prime_support"),
+                    InlineKeyboardButton(text="ᴄʀᴇᴅɪᴛꜱ", callback_data="prime_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Musicplayer", callback_data="source_"),
+                    InlineKeyboardButton(text="ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ", callback_data="source_"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="prime_back"),
@@ -422,7 +420,7 @@ def prime_about_callback(update, context):
     elif query.data == "prime_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, Prime Mega now ready to manage your group."
+            "\nCongragulations, Whyzu now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -449,14 +447,14 @@ def prime_about_callback(update, context):
         )
     elif query.data == "prime_support":
         query.message.edit_text(
-            text=f"*๏ {BOT_NAME} support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on PrimeMega.",
+            text=f"*๏ ᴡʜʏᴢᴜ support chats*"
+            "\nJoin My Support Group/Channel for see or report a problem on ᴡʜʏᴢᴜ.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url=f"t.me/{SUPPORT_CHAT}"),
-                    InlineKeyboardButton(text="Updates", url=f"https://t.me/{SUPPORT_CHANNEL}"),
+                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"t.me/WhzyuNotSupport"),
+                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/Yourdairyy"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="prime_"),
@@ -469,14 +467,13 @@ def prime_about_callback(update, context):
 
     elif query.data == "prime_credit":
         query.message.edit_text(
-            text=f"<b>๏ Credis for primeMega</b>\n"
-            f"\nHere Developers Making The PrimeMegaRobot",
+            text=f"<b>๏ Credis for ᴡʜʏᴢᴜ</b>\n"
+            f"\nHere Developers Making The ᴡʜʏᴢᴜ",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Tonic", url="t.me/Bukan_guudlooking"),
-                    InlineKeyboardButton(text="x~b", url="t.me/Xbarok"),
+                    InlineKeyboardButton(text="ᴡʜʏ", url="t.me/WhyyTod"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="prime_"),
@@ -561,7 +558,7 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help & Command ❓",
+                            text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
@@ -754,10 +751,10 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1606221784:
+        if OWNER_ID != 5119264147:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
-                "[My Channel]({})".format(DONATION_LINK),
+                "[My Channel]({https://t.me/Yourdairyy})".format(DONATION_LINK),
                 parse_mode=ParseMode.MARKDOWN,
             )
     else:
