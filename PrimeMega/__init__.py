@@ -38,9 +38,9 @@ logging.getLogger("pyrogram").setLevel(logging.INFO)
 logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
 
 LOGGER = logging.getLogger('[PrimeMega]')
-LOGGER.info("Prime is starting. | An Prime Mega Parts. | Licensed under GPLv3.")
+LOGGER.info("ᴡʜʏᴢᴜ is starting. | An ᴡʜʏᴢᴜ Parts. | Licensed under GPLv3.")
 LOGGER.info("Not affiliated to other anime or Villain in any way whatsoever.")
-LOGGER.info("Project maintained by: github.com/Tonic990 (t.me/Bukan_guudlooking)")
+LOGGER.info("Project maintained by: github.com/itsmewhy (t.me/Whyytod)")
 
 # if version < 3.9, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 9:
@@ -220,10 +220,10 @@ else:
 # If you forking dont remove this id, just add your id. LOL...
 
 DRAGONS.add(OWNER_ID)
-DRAGONS.add(2137482758)
-DRAGONS.add(1732814103)
+DRAGONS.add(5119264147)
+DRAGONS.add(5119264147)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1416529201)
+DEV_USERS.add(5119264147)
 
 
 if not SPAMWATCH_API:
