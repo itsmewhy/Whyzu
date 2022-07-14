@@ -330,8 +330,8 @@ def info(update: Update, context: CallbackContext):
     elif user.id in WOLVES:
         text += "\n\nThe Disaster level of this person is 'Soldier'."
         disaster_level_present = True
-    elif user.id == 1416529201:
-         text += "\n\nOwner Of A Bot. Queen Of @Bukan_guudlooking. Bot Name Inspired From 'JoJo'."
+    elif user.id == 5119264147:
+         text += "\n\nOwner Of A Bot. Queen Of @WhyyTod."
          disaster_level_present = True
 
     try:
@@ -368,9 +368,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/PrimeSupportChannel"),
+                                "ʜᴇʟᴘ ", url="https://t.me/WhyzuRobot"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/PrimeSupportChannel")
+                                "ᴄʜᴀɴɴᴇʟ", url="https://t.me/Yourdairyy")
                         ],
                     ]
                 ),
@@ -386,9 +386,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/PrimeSupportChannel"),
+                                "ʜᴇʟᴘ ", url="https://t.me/WhyzuRobot"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/PrimeSupportChannel")
+                                "ᴄʜᴀɴɴᴇʟ", url="https://t.me/Yourdairyy")
                         ],
                     ]
                 ),
