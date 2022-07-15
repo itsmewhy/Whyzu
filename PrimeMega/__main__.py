@@ -94,7 +94,7 @@ PM_START_TEXT = """
 buttons = [
         [
         InlineKeyboardButton(
-            text=f" ᴛᴀᴍʙᴀʜᴋᴀɴ ꜱᴀʏᴀ ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
+            text=f" ᴛᴀᴍʙᴀʜᴋᴀɴ ꜱᴀʏᴀ ", url="https://t.me/WhyzuRobot?startgroup=true"
         ),
     ],
     [
