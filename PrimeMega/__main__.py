@@ -86,7 +86,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 *Hello {} !*
 ────────────────────────
-[✨] ɪ'ᴍ ᴡʜʏᴢᴜ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ [✨]{https://telegr.ph/file/9434958755f0fd73c2b8d.jpg}
+[✨] ɪ'ᴍ ᴡʜʏᴢᴜ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ [✨](https://telegr.ph/file/9434958755f0fd73c2b8d.jpg)
 ────────────────────
 ʜɪᴛ ᴛʜᴇ /help ᴏʀ ᴛᴀᴘ ᴏɴ ʙᴜᴛᴛᴏɴ ᴛᴏ ꜱᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅ ᴏɴ ᴍᴇ.
 """
@@ -98,7 +98,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/WhyzuNotSupport"
+        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/WhyzuNotSupport"
         ),
         InlineKeyboardButton(
             text="TryInline", switch_inline_query_current_chat=""
